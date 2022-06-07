@@ -1,0 +1,462 @@
+    html {
+        scroll-behavior: smooth;
+    }
+    
+        
+    body {
+        background-color:white;
+    }
+
+    h1 {
+        margin-left:20px;
+    }
+
+    /*Navbar*/
+    #Navbar{
+        background-color:navy;
+        position:fixed;
+        min-height:40px;
+        width: 100%;
+        top:0;
+        font-size:12px;
+        border-style:hidden hidden groove;
+        z-index: 9999; /*Spesifikasi prioritas elemen, agar kalau tidak tertutup kalau discroll*/
+
+    }
+    
+    #NavButtons{
+        display:flex;
+        justify-content:flex-end;
+        word-spacing: 10px;
+        font-family:serif;
+        padding-right:50px; 
+    }
+    
+    
+    
+    .NavLink:link, .NavLink:visited {
+        background-color:navy;
+        color: white;
+        padding: 10px 10px;
+        text-decoration:none;
+    }
+    
+    .NavLink:hover {
+        background-color: #ffff66;
+        color:black;
+    }
+    
+    /*Home*/
+    #Home {
+        margin-top:60px;
+        background-color:black;
+        color:white;
+        background-image: url("imgs/bg0.jpg");
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size: cover;
+        min-height:600px;
+        width:100%;
+        filter:grayscale(100%);
+        transition: 2s;
+        transition-timing-function: ease-in;
+        
+    }
+    
+    #Home_filter {
+        background: rgba(0,0,0,0.5);
+        min-height:600px;
+        width:100%;
+    }
+    
+    #Home_container {
+        padding:20px;
+        font-size:20px;
+    }
+    
+    
+    
+
+
+    /*About*/
+    #About {
+        width:100%;
+        min-height:500px;
+        border-style:groove;
+        margin-top:70px;
+        padding-top:20px;
+        margin-bottom:70px;
+    }
+    
+    #self_photo {
+        width:200px;
+        margin-left:10px;
+    }
+    
+    #About_container {
+        display:flex;
+        width:100%;
+        min-height:500px;
+    }
+    
+    #About_text {
+        width:51.2%;
+        text-align:justify;
+        margin-left:5%;
+        margin-right:3%;
+    }
+
+    
+    #About_name {
+        font-size:24px;
+    }
+    
+    #About_title {
+        color:gray;
+    }
+
+
+
+    /*Portfolio*/
+    #Portfolio{
+        padding-top:20px;
+    }
+    
+    #Portfolio_container{
+        display:flex;
+        margin-left:20px;
+        width:100%
+    }
+
+    #Portfolio_text{
+        width:24%;
+        text-align:justify;
+    }
+
+    #Portfolio_album{
+        display:flex;
+        flex-direction:row;
+        margin-left:80px;
+        width:60%;
+        flex-wrap:wrap;
+    }
+
+
+    .albumdata{
+        margin-top:15px;
+        margin-right:7%;
+        min-width:120px;
+        width:17%;
+    }
+
+    .photo_tb {
+        border:1px solid #ddd;
+        border-radius:4px;
+        padding:5px;
+        width: 100%;
+    }
+    
+    .photo_tb:hover {
+        box-shadow:0 0 2px 1px rgba(0,140,186,0.5);
+    }
+
+    /*Blog*/
+
+    #Blog {
+        margin-top:120px;
+        padding-top:20px;
+        width:100%;
+        min-height:500px;
+        border-style:ridge;
+    }
+
+    #Blog_container{
+        width:70%;
+        display:flex;
+    }
+
+
+    .Blog_link {
+        text-decoration:none;
+        color:black;
+        min-width:140px;
+        width:25%;
+        margin-left:40px;
+    }
+    
+
+    .Blog_article{
+        width:100%;
+        padding:20px;
+    }
+
+    .Blog_article:hover {
+        box-shadow:0 0 2px 1px rgba(0,140,186,0.5);
+    }
+    
+    .Blog_image{
+        width:100%;
+        height:100px;
+    }
+    
+    .Blog_text{
+        width:100%;
+        text-align:justify;
+    }
+
+    #button_seemoreblog{
+        width:60px;
+        margin-left: 40%;
+        margin-top:40px;
+        padding:10px;
+        background-color:white;
+        border-radius:8px;
+        border-style:ridge;
+        border-color: lightgray;
+        color:gray;
+        text-align:center;  
+    }
+
+    #seemore_links:link, #seemore_links:visited{
+        text-decoration:none;
+    }
+
+    #button_seemoreblog:hover{
+        border-color: #ffc266;
+        color:darkorange;
+        cursor:pointer;
+     }
+
+
+ 
+    /*Team*/
+    #Team {
+        margin-top:180px;
+        padding-top:20px;
+        width:100%;
+    }
+
+    #Team_container{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .member_element{
+        width:100%;
+        display:flex;
+        margin:20px;
+    }
+
+   .member_photo{
+        height:12%;
+        width:12%;
+    }
+
+    .member_data{
+        width:58.56%;
+        padding-left:30px;
+    }
+    
+    .member_info{
+        text-align:justify;
+    }
+
+    .member_name{
+        font-size:20px;
+    }
+
+    .member_title{
+        color:gray;
+    }
+
+    /*Contact*/
+
+    #Contact{
+        margin-top:300px;
+        display:flex;
+        min-height:500px;
+        width:100%;
+    }
+
+    #Contact_text{
+        margin-left:20px;
+        max-width:500px;
+        text-align:justify;
+    }
+
+    #Contact_form{
+        width:36.6%;
+        margin-top:30px;
+        padding-left:5%;
+    }
+    
+    #input_form{
+        width:90%;
+    }
+
+    #text_name{
+        width:inherit;
+        height:30px;
+    }
+    
+    #text_email{
+        width:inherit;
+        height:30px;
+    }
+    
+    #text_response{
+        width:inherit;
+        height:100px;
+    }
+    
+    .button{
+        margin-top:10px;
+        width:50%;
+        height:30px;
+        border-radius:5px;
+        border-width:thin;
+    
+    }
+
+    #name_notif{
+        font-size:14px;
+    }
+
+    #email_notif{
+        font-size:14px;
+    }
+
+    #text_notif{
+        font-size:14px;
+    }
+
+    @media(max-width:750px){
+        /*Navbar*/
+
+        .NavLink{
+            display:none;
+        }
+
+        /*Home*/
+        #Home{
+            width:100%;
+            min-height:400px;
+        }
+
+        #Home_text {
+            display:none;
+        }
+
+        /*About*/
+
+        #About_container {
+            display:flex;
+            flex-wrap:wrap;
+            min-height:500px;
+            margin-left:5px;
+        }
+
+
+
+        #About_text{
+            min-width:300px;
+            width:72%;
+            font-size:16px;
+        }
+
+        /*Portfolio*/
+
+        #Portfolio_container{
+            display:flex;
+            width:90%
+        }
+    
+    
+        #Portfolio_album{
+            display:flex;
+            flex-direction:row;
+            margin-left:20px;
+            width:100%;
+            flex-wrap:wrap;
+        }
+          
+        .photo_tb:hover {
+            box-shadow:0 0 2px 1px rgba(0,140,186,0.5);
+        }
+
+        #Portfolio_text{
+            display:none;
+        }
+
+        .albumdata{
+            margin-top:15px;
+            margin-right:7%;
+            max-width:70px;
+        }
+
+        .photo_tb {
+            border:1px solid #ddd;
+            border-radius:4px;
+            padding:5px;
+            width: 100%;
+        }
+
+
+        /*Blog*/
+        #Blog_container{
+            width:70%;
+            display:flex;
+            flex-wrap:wrap;
+        }
+
+        #button_seemoreblog{
+            margin-left: 40px;
+            margin-bottom:20px;
+            padding:10px;
+        }
+
+        /*Contact*/
+        #Contact{
+            flex-wrap:wrap;            
+        }
+
+        #Contact_text{
+            font-size:15px;
+            width:85%
+        }
+    
+        #Contact_form{
+            width:90%;
+            margin-top:30px;
+            padding-left:5%;
+        }
+        
+        #input_form{
+            width:90%;
+        }
+    
+        #text_name{
+            width:inherit;
+            height:30px;
+        }
+        
+        #text_email{
+            width:inherit;
+            height:30px;
+        }
+        
+        #text_response{
+            width:inherit;
+            height:100px;
+        }
+        
+        .button{
+            margin-top:10px;
+            width:50%;
+            height:30px;
+            border-radius:5px;
+            border-width:thin;
+        }    
+
+
+    }
